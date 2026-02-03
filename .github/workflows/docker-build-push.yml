@@ -27,4 +27,4 @@ jobs:
 
       # Push the Docker image to DockerHub
       - name: Push Docker Image
-        run: docker push mohammadothmandel/final-python:latest
+        run: docker push mohammad-othman-del/final-python:latest
