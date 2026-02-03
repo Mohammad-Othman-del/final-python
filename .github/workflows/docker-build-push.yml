@@ -21,10 +21,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # Step 3: Build the Docker image
+      # Build the Docker image
       - name: Build Docker Image
         run: docker build -t YOUR_DOCKERHUB_USERNAME/final-python:latest .
 
-      # Step 4: Push the Docker image to DockerHub
+      # Push the Docker image to DockerHub
       - name: Push Docker Image
         run: docker push YOUR_DOCKERHUB_USERNAME/final-python:latest
